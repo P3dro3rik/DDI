@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="pagFormulario" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="Nome">Nome:</label><br>
+                <input type="text" name="txtNameNome" id="txtNome" required>
+            </div>
+            <br>
+            <div>
+                <label for="Endereço">Endereço:</label><br>
+                <input type="text" name="txtNameEndereço" id="txtEndereço" required>
+            </div>
+            <br>
+            <div>
+                <label for="Cidade">Cidade:</label><br>
+                <input type="text" name="txtNameCidade" id="txtCidade" required>
+            </div>
+            <br>
+            <div>
+                <label for="estado">Estado:</label><br>
+                <select name="estado" id="estado" required>
+                    <option value="">Selecione...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+
+            </div>
+            <br>
+        </fieldset>
+    </form>
+    <form action="pagFormularip" method="post">
+        <fieldset></fieldset>
+        <legend>Dados profissionais</legend>
+        <div> 
+        <label for="">Natureza do cargo</label><br>
+         <input type="radio" name="rdNameNaturezaDoCargo" id="NaturezaDoCargo" value="1">
+         Gerência
+         <input type="radio" name="rdNameNaturezaDoCargo" id="NaturezaDoCargo" value="2">
+         Financeiro
+         <input type="radio" name="rdNameNaturezaDoCargo" id="NaturezaDoCargo" value="1">
+         Recepção
+         <input type="radio" name="rdNameNaturezaDoCargo" id="NaturezaDoCargo" value="1">
+         Administrativo
+         <input type="radio" name="rdNameNaturezaDoCargo" id="NaturezaDoCargo" value="1">
+         Juridico
+         </div>
+         <br>
+         <div>
+            <label for="">Área de interesse</label><br>
+            <input type="checkbox" name="chkAreaDeAtuacao" id="chkAreaDeAtuacao" value="1"> Computação <br>
+            <input type="checkbox" name="chkAreaDeAtuacao" id="chkAreaDeAtuacao" value="2"> Biologia <br>
+            <input type="checkbox" name="chkAreaDeAtuacao" id="chkAreaDeAtuacao" value="3"> Meio Ambiente <br>
+            <input type="checkbox" name="chkAreaDeAtuacao" id="chkAreaDeAtuacao" value="4"> Engenharia <br> 
+            <input type="checkbox" name="chkAreaDeAtuacao" id="chkAreaDeAtuacao" value="5"> História <br>
+         </div>
+         <br>
+         <div>
+            <label for="">Mini-Currículo:</label><br>
+            <textarea name="txtCurriculo" id="txtCurriculo" cols="100" rows="10" maxlength="350"></textarea>
+         </div>
+         <br>
+         <div>
+            <button type="submit">Enviar</button> <button type="submit">Limpar</button>
+         </div>
+        </fieldset>
+    </form>
+</body>
+</html>
